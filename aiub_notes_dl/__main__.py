@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-__version__ = '0.1.0'
+__version__ = '1.0.0'
 import os
 import sys
 import requests as rs
