@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "aiub-notes-dl"
-version = "1.0.0.post1"
+version = "1.0.0.post2"
 description = "Download notes from AIUB portal"
 authors = ["Fahad Hossain <evilinfinite7@gmail.com>"]
+readme = "README.rst"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
