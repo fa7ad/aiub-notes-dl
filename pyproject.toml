@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aiub-notes-dl"
-version = "1.0.0"
+version = "1.0.3"
 description = "Download notes from AIUB portal"
 authors = ["Fahad Hossain <evilinfinite7@gmail.com>"]
 
@@ -15,3 +15,6 @@ pytest = "^3.0"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+aiubnotesdl = 'aiub_notes_dl:cli'

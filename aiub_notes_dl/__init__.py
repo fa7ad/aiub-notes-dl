@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-__version__ = '1.0.0'
+
+__version__ = '1.0.3'
 import os
 import sys
 import requests as rs
@@ -120,7 +121,7 @@ class AiubNotesDl:
 
         os.system('clear' if os.name == 'posix' else 'cls')
         print("Downloding Completed.....")
-        print(str(count)+" new file/s added to the library")
+        print(str(self.count)+" new file/s added to the library")
         print("Check the directory where this programme is located..")
 
     def make_folder(self, name):
@@ -130,8 +131,7 @@ class AiubNotesDl:
             os.makedirs(final_directory)
 
     def dloader(self, file_name, url):
-        global count
-        count += 1
+        self.count += 1
         req = self.sess.get(url)
         file = open(file_name, 'wb')
         for chunk in req.iter_content(100000):
@@ -147,9 +147,13 @@ class AiubNotesDl:
         self.get_course_notes()
 
 
-if __name__ == '__main__':
+def cli():
     username = input("Enter AIUB ID: ")
     password = getpass("AIUB Password: ")
     dl = AiubNotesDl(username, password)
     dl.main()
     dl.sess.close()
+
+
+if __name__ == '__main__':
+    cli()
