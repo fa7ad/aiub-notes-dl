@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aiub-notes-dl"
-version = "1.0.3"
+version = "1.0.0.post1"
 description = "Download notes from AIUB portal"
 authors = ["Fahad Hossain <evilinfinite7@gmail.com>"]
 
