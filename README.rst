@@ -5,7 +5,7 @@ Download notes from AIUB Portal
 
 Originally created by `Niaz Ahmed`_
 
-.. _Niaz Ahmed: mailto:mr.niaz@live.com
+.. _Niaz Ahmed: https://github.com/itsniaz/AIUB-Notes-Crawler
 
 Installation
 ------------
