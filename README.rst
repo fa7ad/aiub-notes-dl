@@ -27,4 +27,4 @@ Follow the instructions on the CLI.
 License
 -------
 
-MIT
+**GPLv3**
